@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import ManageAccounts from './ManageAccounts.js';
+require('bootstrap/dist/css/bootstrap.min.css');
+require('./css/App.css');
 
 class App extends Component {
   state = {
@@ -20,10 +24,15 @@ class App extends Component {
     return (
       <div>
         {this.state.users.map(item => (
-          <div key={item.url}>
-            <h1>{item.username}</h1>
-            <span>{item.email}</span>
-          </div>
+          <div>
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+              <ul>{item.username}</ul>
+              <ul>{item.email}</ul>
+              <ul>{item.url}</ul>
+              </li>
+           </ul>
+         </div>  
         ))}
       </div>
     );
