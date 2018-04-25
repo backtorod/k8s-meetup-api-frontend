@@ -1,12 +1,11 @@
-# Dependencies for reactjs
+## Dependencies for reactjs
 
-# First Install react
+## First Install react
 npm install -g create-react-app
 
-# Go to application dir 
+## Go to application dir 
 cd frontend
 
-# And finaly execute command for start server
-#
+## And finaly execute command to start server
+
 npm start
-docker build -t frontend-api .
